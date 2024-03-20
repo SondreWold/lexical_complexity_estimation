@@ -19,3 +19,5 @@
 
 _______
 
+This repository contains the code for reproducing the results for our
+upcoming paper at LREC-COLING 2024. 
