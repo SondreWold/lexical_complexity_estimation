@@ -25,3 +25,24 @@ _______
 
 This repository contains the code for reproducing the results for our
 upcoming paper at LREC-COLING 2024. 
+
+# Collecting the raw data
+
+Not all of the data used in the paper is publically available. Links to
+obtaining the available data can be found in the paper.
+
+# Processing
+
+The `*_parser.py` scripts can be used to collect/process individual
+documents from original sources. The output of these parsers are
+`.json` files that includes cleaned text for each document identifier.
+These files should then be given as inputs to `serializer.py` which
+transforms the documents into lemmatized  sequences on the same format.
+
+# Indexing
+
+The `inverted_indexer.py` script takes as input the lemmatized documents
+and creates an inverted index for each lemma. The `index_merger.py` scipt
+takes as input these indexes and merges them into one combined lemma list
+for all the sources. This is used to calculate all the lemma-level
+statistics in the analysis.
