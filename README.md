@@ -40,6 +40,12 @@ documents from original sources. The output of these parsers are
 These files should then be given as inputs to `serializer.py` which
 transforms the documents into lemmatized  sequences on the same format.
 
+# Calculating the LIX score
+
+Given a lemmatized document list, the `metrics.py` script calculates the
+document-level LIZ score for each entry. The script can also calculate the
+coleman-liau.
+
 # Indexing
 
 The `inverted_indexer.py` script takes as input the lemmatized documents
