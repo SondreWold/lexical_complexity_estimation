@@ -2,14 +2,16 @@
 
 
 <p align="center">
-  <b>Sondre Wold, Petter Mæhlum, Oddbjørn Hove</b>
+  <b>Sondre Wold<sup>*</sup>, Petter Mæhlum<sup>*</sup>, Oddbjørn Hove</b>
 </p>
 
 <p align="center">
   <i>
-    University of Oslo<br>
+    <sup>*</sup>University of Oslo<br>
     Language Technology Group<br>
   </i>
+  <br>
+  <i> Helse Fonna </i>
 </p>
 <br>
 
