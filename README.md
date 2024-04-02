@@ -28,8 +28,9 @@ upcoming paper at LREC-COLING 2024.
 
 # Collecting the raw data
 
-Not all of the data used in the paper is publically available. Links to
-obtaining the available data can be found in the paper.
+Not all of the data used in the paper is publically available. Links to the
+original sources can be found in the paper. Upon request, we can provide
+the collections. Please see the paper for contact details.
 
 # Processing
 
