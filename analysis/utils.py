@@ -1,7 +1,37 @@
 import gensim
 import numpy as np
-from scipy import stats
 import json
+import re
+from scipy import stats
+
+class Stavelse:
+    def __init__(self):
+        self.vowellist = "[aeiouyæøåéüèáàóò]+"
+        self.diphthongs = ["au","øy","ei","oi","ai"]
+
+    def stav(self,word):
+        """Takes a word and outputs the number of syllables,
+            based on the number and types of vowels.
+            98.2% accuracy on the uttalekorpus.
+            str: word - the word for which syllables is predicted
+        """
+        vowels = re.findall(self.vowellist, word.lower())
+        newvowels = []
+        for vow in vowels:
+            if len(vow) == 1:
+                newvowels.append(vow)
+            else:
+                vow_iter = iter(vow)
+                first = next(vow_iter,"")
+                while first != "":
+                    second = next(vow_iter,"")
+                    if first+ second in self.diphthongs:
+                        newvowels.append(first+second)
+                        first = next(vow_iter,"")
+                    else:
+                        newvowels.append(first)
+                        first = second
+        return newvowels
 
 
 def print_kolmogorov(name, value1, value2):
