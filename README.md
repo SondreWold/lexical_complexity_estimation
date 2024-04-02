@@ -47,3 +47,14 @@ and creates an inverted index for each lemma. The `index_merger.py` scipt
 takes as input these indexes and merges them into one combined lemma list
 for all the sources. This is used to calculate all the lemma-level
 statistics in the analysis.
+
+# Analysis
+
+`corpora_statistics.py` reproduces the results related to each individual
+collection and their correlations. It also produces all of the plots used
+in the paper.
+
+`lexical_analysis.py` takes as input the combined inverted index, a
+complete lemma list from all the sources, and reproduces the results and
+figures related to calculating complexity scores for individual lemmas.
+
