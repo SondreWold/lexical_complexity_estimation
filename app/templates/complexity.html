@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>Velkommen</title>
+    <h3>Background Information</h3>
+    <p>Note! This is an interactive tool that takes a lemma and outputs suggestions for simpler words that are similar in meaning. </p>
+    <p>The simplicity (complexity) of the word is based.This tool is a simplified version of our full system. </p>
+    <P>Some words might not occur in the corpus.</p> 
+    <p>Note that we do not claim that this system is perfect, and you should only use the words suggested here as inspiration.</p>
+
+    <h3>App Usage</h3>
+    <p>Enter lemmas with the appropriate POS tag in the box below.</p>
+    <p>The system only works for Norwegian Bokmål.</p>
+    <p>For example: hus_NOUN, spise_VERB, anerkjenne_VERB.</p>
+    <p>The system will send you to a new page with your results.</p>
+<style>
+input {
+    border: 5px solid #555;
+    }
+</style>
+</head>
+<body style="background-color:powderblue;">
+<main>
+    <center>
+<form action="/samaneh2" method="post" >
+    <textarea name="fname" rows="14" cols="30" wrap="soft"> </textarea><br>
+ <!--<input type="textarea" rows="14" cols="10" wrap="soft" name="fname" ><br>-->
+  <input type="submit" value="Submit">
+</form>
+</center>
+<p>For more information, please visit our GitHub repository which also contains a link to our paper.</p>
+<p> <a href="https://github.com/SondreWold/lexical_complexity_estimation">Github: Lexical Complexity Estimation</a> </p>
+</main>
+</body>
