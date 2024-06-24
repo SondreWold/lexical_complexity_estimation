@@ -27,7 +27,7 @@ This repository contains the code for reproducing the results for our
 upcoming paper at LREC-COLING 2024. 
 
 # Online tool
-TBA
+The app folder contains a bare bones flask app.
 
 # Collecting the raw data
 
